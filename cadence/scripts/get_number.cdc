@@ -1,5 +1,5 @@
-import Number from "../contracts/Number.cdc"
+import NumberContract from "../contracts/Number.cdc"
 
 pub fun main(): UInt64 {
-  return Number.id
+  return NumberContract.id
 }

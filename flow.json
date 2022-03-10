@@ -5,9 +5,7 @@
 			"serviceAccount": "emulator-account"
 		}
 	},
-	"contracts": {
-		"NumberContract": "../contracts/NumberContract.cdc"
-	},
+	"contracts": {},
 	"networks": {
 		"emulator": "127.0.0.1:3569",
 		"mainnet": "access.mainnet.nodes.onflow.org:9000",
@@ -16,7 +14,7 @@
 	"accounts": {
 		"emulator-account": {
 			"address": "f8d6e0586b0a20c7",
-			"key": "f91864adfa17aee902547756d31f3bacc0154806c2fe690abe4f6bdaa92481a0"
+			"key": "84a6f04c99bd209abca3421adabe6fb130201c3926817523e93524c374b05a22"
 		}
 	},
 	"deployments": {}

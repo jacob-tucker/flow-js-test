@@ -10,7 +10,7 @@ export const deployNumber = async () => {
   const NumberAdmin = await getNumberAdminAddress();
   await mintFlow(NumberAdmin, "10.0");
 
-  await deployContractByName({ to: NumberAdmin, name: "Number" });
+  await deployContractByName({ to: NumberAdmin, name: "NumberContract" });
 };
 
 /*

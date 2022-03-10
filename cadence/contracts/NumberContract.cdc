@@ -1,4 +1,4 @@
-pub contract Number {
+pub contract NumberContract {
   pub let id: UInt64
 
   init() {
