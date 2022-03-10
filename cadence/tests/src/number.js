@@ -23,3 +23,12 @@ export const getNumberId = async () => {
 
   return executeScript({ name });
 };
+
+export const updateNumberId = async () => {
+  const NumberAdmin = await getNumberAdminAddress();
+
+  const signers = [NumberAdmin];
+  const name = "update_number";
+
+  return sendTransaction({ name, signers });
+};

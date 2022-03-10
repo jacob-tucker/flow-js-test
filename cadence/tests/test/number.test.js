@@ -9,10 +9,10 @@ import {
   shallRevert,
 } from "flow-js-testing";
 
-import { getNumberAdminAddress } from "../src/common.js";
 import {
   getNumberId,
   deployNumber,
+  updateNumberId,
 } from "../src/number.js";
 
 // We need to set timeout for a higher number, because some transactions might take up some time
@@ -44,5 +44,16 @@ describe("Number", () => {
 
     const [id] = await shallResolve(getNumberId())
     expect(id).toBe(1);
+  });
+
+  it("id should be 2 after contract is deployed and update id", async () => {
+    // Setup
+    await deployNumber();
+
+    // Mint instruction for Alice account shall be resolved
+    await shallPass(updateNumberId());
+
+    const [id] = await shallResolve(getNumberId())
+    expect(id).toBe(2);
   });
 });
