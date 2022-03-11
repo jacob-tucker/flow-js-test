@@ -6,7 +6,9 @@
 		}
 	},
 	"contracts": {
-		"NumberContract": "../contracts/NumberContract.cdc"
+		"NumberContract": "../contracts/NumberContract.cdc",
+		"ExampleNFT": "../contracts/ExampleNFT.cdc",
+		"MetadataViews": "../contracts/MetadataViews.cdc"
 	},
 	"networks": {
 		"emulator": "127.0.0.1:3569",
